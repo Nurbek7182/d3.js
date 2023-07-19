@@ -25,6 +25,18 @@
           </stop>
           <stop offset="100%" stop-color="#003153"></stop>
         </radialGradient>
+
+        <linearGradient id="land1-gradient" x1="0%" x2="0%" y1="0%" y2="100%">
+          <stop offset="50%" stop-color="#228B22">
+            <animate
+              attributeName="stop-color"
+              values="#228B22; #1C542D; #013220"
+              dur="15s"
+              repeatCount="indefinite"
+            ></animate>
+          </stop>
+          <stop offset="100%" stop-color="#013220"></stop>
+        </linearGradient>
       </defs>
 
       <rect
@@ -47,14 +59,16 @@
       </circle>
 
       <path
-        d="M0,1080 Q1200,400 1550,900 1250,780 "
+        d="M0,740 Q700,400 1100,800 L1920,1080 0,1080 Z"
         stroke="green"
         stroke-width="2px"
+        fill="url(#land1-gradient)"
       ></path>
       <path
-        d="M1000,1080 Q1000,1000 200,500 400,800"
+        d="M0,1080 v180 S800,800 1100,750 S1400,700 1800,400 q100,-100 150,-70 l0,0 0,750 z"
         stroke="green"
         stroke-width="2px"
+        fill="url(#land1-gradient)"
       ></path>
     </svg>
   </body>
